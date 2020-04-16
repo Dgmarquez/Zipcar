@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>user login</title>
+</head>
+<body>
+
+	<div id = "app"></div>
+    <div class="aling">
+	
+        <img class="logo" src="img/iniciar-sesion.svg">
+		<div class="card">
+			<div class="head">
+			<div></div>
+			<a id="login" class="selected" href="#login">Ingreso</a>
+			<a id="register" href="#register">Nuevo usuario</a>
+			<div></div>
+		</div> 
+		<div class="tabs">
+			<form class="form" id="myForm" action ="validar.php" method="post">
+				<div class = "inputs">
+					<div class ="input">
+						<input placeholder = "Usuario" type="text" name="inp_usuario" required>
+						<img src ="img/user.svg">
+					</div>
+					<div class="input">					
+						<input placeholder = "Contraseña" type="password" name="inp_contrasena" required>
+						<img src ="img/pass.svg">
+					</div>
+					
+
+					<label class="checkbox">
+						<input type="checkbox">
+						<span>Recordarme</span>
+					</label>
+				</div>
+				<button><span>Ingresar</span></button>
+			</form>
+
+
+			<form method="post"action="insert.php">
+				<div class = "inputs">
+					<div class ="input">
+						<input placeholder = "Correo" type="email" name="email" required> 
+						<img src ="img/mail.svg">
+					</div>
+					<div class="input">					
+						<input placeholder = "Usuario" type="text" name="usuario" required>
+						<img src ="img/user.svg">
+					</div>
+					<div class="input">					
+						<input placeholder = "Contraseña" type="password" name="contrasena" required>
+						<img src ="img/pass.svg">
+					</div>
+				</div>
+				<button type="submit">Registrarse</button>
+			</form>
+			<script>
+				const myForm= document.getElementById('myForm');
+
+				myForm.addEventListener()
+			</script>
+
+
+
+
+		</div>
+	</div>	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
